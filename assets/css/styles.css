@@ -1,15 +1,24 @@
-html{
+html body{
   font-family: 'Lato', sans-serif;
+  color: #f7f4ef;
 }
 .navbar{
-  background-color: #355C7D;
   z-index: 100;
+  background-color: #046D8B;
 }
-
+.navbar-nav a{
+  color: #f7f4ef;
+}
+.material-icons {
+  color: #f7f4ef;
+}
 .navbar-brand{
     font-family: 'Sacramento', cursive;
     font-size: 40px;
     color: #f7f4ef;
+}
+#fp-nav ul li a span{
+  background: #f7f4ef;
 }
 .sub-text{
   font-family: 'Lato', sans-serif;
@@ -19,15 +28,18 @@ html{
   height: 18px;
   border-radius: 60%;
 }
+.sect_1_img{
+  max-width: 100%;
+}
 .sect-1{
-  background-color: #E08E79;
+  background-color: #309292;
 }
 .sect-2{
-  background-color: #F1D4AF;
+  background-color: #2FB8AC;
 }
 .sect-3{
-  background-color: #ECE5CE;
+  background-color: #93A42A;
 }
 .sect-4{
-  background-color: #C5E0DC;
+  background-color: #ECBE13;
 }

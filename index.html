@@ -5,18 +5,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Lato|Sacramento" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="assets/css/fullpage.css">
   <link rel="stylesheet" href="assets/css/styles.css">
-  <script type="text/javascript" src="assets/js/fullpage.js"></script>
   <title>Le Bonnet Bleu - Théâtre Français d'Austin</title>
 </head>
 
 <body>
   <nav class="navbar navbar-expand-md">
-    <a class="navbar-brand" href="#">Le Bonnet Bleu <span class="navbar-text sub-text"> | Théâtre Français d'Austin</span></a>
+    <span class="navbar-brand mb-0 h1">Le Bonnet Bleu <span class="navbar-text sub-text"> | Théâtre Français d'Austin</span></span>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <i class="material-icons">menu</i>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
       <div class="navbar-nav justify-content-end">
@@ -28,7 +29,20 @@
     </div>
   </nav>
   <div id="fullpage">
-    <div class="section sect-1">Some section</div>
+    <div class="section sect-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <img class="sect_1_img" src="assets/img/stage-old.jpg" alt="stage">
+          </div>
+          <div class="col-md-9">
+            <p>Donec egestas vitae arcu a vulputate. Sed sagittis, tortor at varius aliquam, augue odio rutrum justo, a fermentum arcu eros vel justo. Suspendisse in tempor purus. Mauris at sodales dolor. Curabitur malesuada quis metus at dapibus. In eu quam vitae mauris faucibus placerat. Proin ante turpis, congue eget suscipit vel, cursus vitae lectus. Aenean sagittis tortor ac maximus placerat. Etiam vel elementum magna, sit amet luctus erat. Sed eu viverra sem, in eleifend nulla. Vivamus nibh ipsum, finibus vitae commodo sed, gravida a lorem. Nunc faucibus nulla purus, sit amet fringilla justo maximus eget.
+
+            Phasellus felis purus, facilisis et lacus a, facilisis euismod ante. Donec suscipit vitae ligula a sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse potenti. Integer malesuada, turpis eu ultrices interdum, lectus libero eleifend orci, ac dignissim velit arcu vel dolor. Cras ac est ac dui hendrerit mattis sit amet sed purus. Nulla elementum diam vitae pellentesque condimentum. Aliquam quam tortor, fermentum ornare malesuada nec, dapibus ac turpis. Etiam eget cursus tortor. Donec et neque sit amet tortor bibendum pretium sed vel nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin aliquam arcu id magna facilisis, et malesuada urna congue. Nulla facilisi. Nam fringilla dolor neque, non feugiat dui tempus vel. Suspendisse quis justo eleifend lorem pretium rutrum non eu lectus. Phasellus ante neque, vehicula vitae tempus id, dignissim ac orci.</p>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="section sect-2">Some section</div>
     <div class="section sect-3">Some section</div>
     <div class="section sect-4">Some section</div>
@@ -37,14 +51,18 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/js/scrolloverflow.min.js"></script>
+  <script type="text/javascript" src="assets/js/fullpage.js"></script>
   <script>
     $(document).ready(function() {
       new fullpage('#fullpage', {
         scrollingSpeed: 1000,
         navigation: true,
         slidesNavigation: true,
-        responsiveHeight: 330,
-        controlArrows: false
+        controlArrows: false,
+        bigSectionsDestination: 'top',
+        scrollOverflow: true,
+        paddingBottom: '200px',
       });
     });
   </script>
