@@ -4,7 +4,7 @@ html body{
 }
 .navbar{
   z-index: 100;
-  background-color: #046D8B;
+  background-color: rgba(25,25,25,0);
 }
 .navbar-nav a{
   color: #f7f4ef;
@@ -15,10 +15,7 @@ html body{
 .navbar-brand{
     font-family: 'Sacramento', cursive;
     font-size: 40px;
-    color: #f7f4ef;
-}
-#fp-nav ul li a span{
-  background: #f7f4ef;
+    /* color: #f7f4ef; */
 }
 .sub-text{
   font-family: 'Lato', sans-serif;
@@ -28,18 +25,57 @@ html body{
   height: 18px;
   border-radius: 60%;
 }
-.sect_1_img{
-  max-width: 100%;
+
+html body{
+  background-image: url("../img/stage-old.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  scroll-behavior: smooth;
 }
-.sect-1{
-  background-color: #309292;
+.landing_image{
+  height: 600px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
-.sect-2{
-  background-color: #2FB8AC;
+.landing_text{
+  font-family: 'Sacramento', cursive;
+  font-size: 60px;
 }
-.sect-3{
-  background-color: #93A42A;
+.panel_title{
+  font-family: 'Sacramento', cursive;
 }
-.sect-4{
-  background-color: #ECBE13;
+#sect-1{
+  /* background-color: #309292; */
+  background-color: #191919;
+}
+#sect-2{
+  background-color: #191919;
+}
+#sect-3{
+  background-color: #191919;
+}
+
+.production_poster{
+  width: 50%;
+  display: block;
+  margin: 40px auto;
+}
+
+.filler_image_1{
+  background-image: url("../img/lights.jpg");
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.filler_image_2{
+  background-image: url("../img/seats.jpg");
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
