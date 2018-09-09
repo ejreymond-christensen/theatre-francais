@@ -14,7 +14,7 @@ html body{
 }
 .navbar-brand{
     font-family: 'Sacramento', cursive;
-    font-size: 40px;
+    font-size: 60px;
     /* color: #f7f4ef; */
 }
 .sub-text{
@@ -46,6 +46,7 @@ html body{
 }
 .panel_title{
   font-family: 'Sacramento', cursive;
+  font-size: 50px;
 }
 #sect-1{
   /* background-color: #309292; */
@@ -78,4 +79,23 @@ html body{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+hr {
+  border-color: #b7b7b7;
+  background-color: #b7b7b7;
+}
+.bio_sub_title{
+  color: #b7b7b7;
+  font-style: italic;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+footer{
+  font-family: 'Lato', sans-serif;
+  color: #f7f4ef;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2f2f2f;
 }
